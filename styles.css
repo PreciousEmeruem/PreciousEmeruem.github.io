@@ -1,68 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Your-Font-Here:wght@400;700&display=swap');
-
 body {
-    font-family: 'Your-Font-Here', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
-    background-color: #f8f8f8;
 }
 
 .container {
     display: flex;
-    max-width: 1000px;
+    width: 100%;
 }
 
-.left-section {
-    background: #FFC107; /* Adjust as per your image */
+.left-panel {
+    background-color: #FFD700; /* Yellow background */
+    width: 50%;
     padding: 20px;
+    box-sizing: border-box;
     text-align: center;
-    width: 40%;
 }
 
-.left-section img {
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-.title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
-}
-
-.subtitle {
-    font-size: 1.2rem;
-    color: white;
-}
-
-.right-section {
-    display: flex;
-    flex-wrap: wrap;
-    width: 60%;
-}
-
-.grid {
+.right-panel {
+    width: 50%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
-.box {
-    padding: 20px;
-    font-size: 1.2rem;
-    font-weight: bold;
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
-    text-align: center;
-    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: opacity 0.3s;
 }
 
-.teal { background: #00B4D8; }
-.pink { background: #FF6B81; }
-.purple { background: #9B51E0; }
-.orange { background: #F2994A; }
-.dark-purple { background: #4B0082; }
-.yellow { background: #FFD700; }
+.link:hover {
+    opacity: 0.8; /* Slightly fade on hover */
+}
+
+.circle-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #007BFF; /* Button color */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+    cursor: pointer;
+    outline: none;
+}
+
+.circle-button:hover {
+    border: 2px solid #FFD700; /* Highlight color */
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
